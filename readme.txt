@@ -22,3 +22,10 @@ $ git commit -m "（添加说明）"	//添加本次提交说明
 <文件查看>
 $ git status	//查看仓库当前状态
 $ git diff	//查看修改内容
+
+<版本回溯>
+$ git log	//查看修改历史
+$ git log --pretty=oneline	//功能同上，简化显示
+$ git reset --hard HEAD^	//回到上一个版本 其中HEAD^上个版本 HEAD^^上上个版本 HEAD~n 上n个版本
+$ git reset --hard （commit id版本号）	//回溯到commit id所对应版本
+$ git reflog	//查看命令历史，也可找到commit id
