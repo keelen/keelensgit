@@ -1,6 +1,4 @@
-<This is a test text>
-Git is a version control system.
-Git is free software.
+<This is a test message>
 
 帮助文档：
 <自报家门>
@@ -36,3 +34,4 @@ $ git reset HEAD （文件名称）	//回退暂存区修改至工作区
 
 <删除文件>
 $ git rm （文件名称）	//删除文件
+
