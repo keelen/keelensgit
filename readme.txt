@@ -37,9 +37,9 @@ $ git rm （文件名称）	//删除文件
 
 <远程库管理>
 $ git remote add origin （github网址）	//关联github远程库
-$ git push origin master	//master分支最新修改推至github origin（$ git push -u origin master 第一次推送）
+$ git push （远程库，默认名origin） （本地分支master）	//master分支最新修改推至github origin（$ git push -u origin master 第一次推送）
 $ git clone （github网址）	//克隆远程库至本地
-$ git remote （远程仓库，默认名origin）	//查看远程库信息
+$ git remote （远程库，默认名origin）	//查看远程库信息
 $ git remote -v	//查看抓取和推送地址
 $ git pull	//抓取远程文件
 $ git checkout -b （本地分支名称） origin/（远程库分支名称）	//在本地创建和远程分支对应的分支
