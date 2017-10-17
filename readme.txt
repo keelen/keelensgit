@@ -35,3 +35,6 @@ $ git reset HEAD （文件名称）	//回退暂存区修改至工作区
 <删除文件>
 $ git rm （文件名称）	//删除文件
 
+<添加远程库>
+$ git remote add origin （github网址）	//关联github远程库
+$ git push origin master	//master分支最新修改推至github（$ git push -u origin master 第一次推送）
