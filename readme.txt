@@ -39,7 +39,7 @@ $ git rm （文件名称）	//删除文件
 $ git remote add origin （github网址）	//关联github远程库
 $ git push （远程库，默认名origin） （本地分支master）	//master分支最新修改推至github origin（$ git push -u origin master 第一次推送）
 $ git clone （github网址）	//克隆远程库至本地
-$ git remote （远程库，默认名origin）	//查看远程库信息
+$ git remote	//查看远程库信息
 $ git remote -v	//查看抓取和推送地址
 $ git pull	//抓取远程文件
 $ git checkout -b （本地分支名称） origin/（远程库分支名称）	//在本地创建和远程分支对应的分支
@@ -67,4 +67,13 @@ $ git stash drop	//删除暂存区工作
 $ git stash pop	//恢复+删除
 $ git stash apply （stash名称）	//恢复指定stash
 
+<标签>
+$ git tag （标签名称）	//创建标签（当前提交版本）
+$ git tag （标签名称） （commit id）	//创建标签（commit id所对应版本）
+$ git tag -a （标签名称） -m "（说明文字）" （commit id）	//创建带有说明的标签，-a改为-s则为PGP私钥签名标签
+$ git tag	//查看所有标签
+$ git show （标签名称）	//查看标签信息
+$ git tag -d （标签名称）	//删除标签
+$ git push （远程库，默认名origin） （标签名称）	//推送标签到远程，标签名称为--tags则推送所有标签
+git push （远程库，默认名origin） :refs/tags/（标签名称）	//删除远程标签，需先本地删除
 
